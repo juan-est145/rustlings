@@ -1,9 +1,11 @@
 // TODO: Fix the compiler error on this function.
 fn picky_eater(food: &str) -> &str {
-    if food == "strawberry" {
+    if food.to_lowercase() == "strawberry" {
         "Yummy!"
+    } else if food.to_lowercase() == "potato" {
+        "I guess I can eat that."
     } else {
-        1
+        "No thanks!"
     }
 }
 
